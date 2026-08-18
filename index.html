@@ -1,609 +1,404 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="zh-CN">
 <head>
-    <meta charset="utf-8">
-    <title>某某智能装备有限公司</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
-
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
-
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Rubik:wght@500;600;700&display=swap"
-        rel="stylesheet">
-
-    <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-
-    <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>北京玛斯莱特科技有限公司 — 油田自动化 · SCADA · 远程测控</title>
+<meta name="description" content="北京玛斯莱特科技专注油田自动化、SCADA 与远程测控系统集成，提供油井远程监测、功图量油、无线测控终端、传感器仪表等软硬全栈产品。" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/styles.css" />
 </head>
-
 <body>
-    <!-- Spinner Start -->
-    <div id="spinner"
-        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+
+<!-- ============ 头部 / 导航 ============ -->
+<header class="header">
+  <div class="container header__inner">
+    <a class="brand" href="index.html" aria-label="玛斯莱特科技 首页">
+      <span class="brand__mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 12h3l2-6 4 14 3-9 2 4h4"/>
+        </svg>
+      </span>
+      <span class="brand__name">玛斯莱特科技<small>MASLETECH</small></span>
+    </a>
+
+    <nav class="nav" id="nav">
+      <a href="index.html" class="active">首页</a>
+      <a href="about.html">公司简介</a>
+      <a href="products.html">产品中心</a>
+      <a href="cases.html">典型案例</a>
+      <a href="solution.html">解决方案</a>
+      <a href="contact.html">联系我们</a>
+    </nav>
+
+    <div class="header__cta">
+      <a href="contact.html" class="btn btn--primary btn--sm">获取方案</a>
+      <button class="nav-toggle" id="navToggle" aria-label="展开菜单" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
     </div>
-    <!-- Spinner End -->
+  </div>
+</header>
 
-
-    <!-- Topbar Start -->
-    <div class="container-fluid bg-dark px-0">
-        <div class="row g-0 d-none d-lg-flex">
-            <div class="col-lg-6 ps-5 text-start">
-                <div class="h-100 d-inline-flex align-items-center text-white">
-				<!--
-                    <span>Follow Us:</span>
-                    <a class="btn btn-link text-light" href=""><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-link text-light" href=""><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-link text-light" href=""><i class="fab fa-linkedin-in"></i></a>
-                    <a class="btn btn-link text-light" href=""><i class="fab fa-instagram"></i></a>
-				-->
-                </div>
-				
-            </div>
-            <div class="col-lg-6 text-end">
-                <div class="h-100 topbar-right d-inline-flex align-items-center text-white py-2 px-5">
-                    <span class="fs-5 fw-bold me-2"><i class="fa fa-phone-alt me-2"></i>联系我们:</span>
-                    <span class="fs-5 fw-bold">+012 345 6789</span>
-                </div>
-            </div>
-        </div>
+<!-- ============ Hero ============ -->
+<section class="hero">
+  <div class="container hero__inner">
+    <div class="hero__copy">
+      <span class="hero__eyebrow">SCADA · 油田自动化 · 远程测控</span>
+      <h1>让每一口油井<br><span class="accent">都被实时看见</span></h1>
+      <p class="hero__sub">
+        我们以软硬全栈自研的远程测控系统，把抽油机井、电泵井、气井与计量站的运行状态
+        汇聚到同一块屏幕——实时、可信、可预警。
+      </p>
+      <div class="hero__actions">
+        <a href="products.html" class="btn btn--cyan">
+          查看产品中心
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a href="contact.html" class="btn btn--ghost">联系我们</a>
+      </div>
+      <div class="hero__trust">
+        <span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+          18 年行业深耕
+        </span>
+        <span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+          300+ 在运监测点
+        </span>
+        <span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+          软硬全栈自研
+        </span>
+      </div>
     </div>
-    <!-- Topbar End -->
 
-
-    <!-- Navbar Start -->
-    <div id="navbar"></div>
-    <!-- Navbar End -->
-
-
-    <!-- Carousel Start -->
-    <div class="container-fluid px-0 mb-5">
-        <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="w-100" src="img/carousel-1.jpg" alt="Image">
-                    <div class="carousel-caption">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-10 text-start">
-                                    <p class="fs-5 fw-medium text-primary text-uppercase animated slideInRight">25年行业经验</p>
-                                    <h1 class="display-1 text-white mb-5 animated slideInRight">可靠·高效·一站式工业自动化整体解决方案专家</h1>
-                                    <a href="" class="btn btn-primary py-3 px-5 animated slideInRight">了解更多</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img class="w-100" src="img/carousel-2.jpg" alt="Image">
-                    <div class="carousel-caption">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-10 text-start">
-                                    <p class="fs-5 fw-medium text-primary text-uppercase animated slideInRight">25年专注 · 成就专业</p>
-                                    <h1 class="display-1 text-white mb-5 animated slideInRight">最值得信赖的工业自动化一站式解决方案提供商</h1>
-                                    <a href="" class="btn btn-primary py-3 px-5 animated slideInRight">了解更多</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
+    <!-- 监控面板 -->
+    <div class="monitor" aria-label="实时监测示意面板">
+      <div class="monitor__top">
+        <span class="monitor__title">油井实时监测 · 一号计量站</span>
+        <span class="status-pill"><span class="dot"></span>在线 · 正常</span>
+      </div>
+      <div class="monitor__chart">
+        <svg viewBox="0 0 320 120" width="100%" role="img" aria-label="载荷趋势曲线">
+          <defs>
+            <linearGradient id="g1" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#15A9BC" stop-opacity="0.35"/>
+              <stop offset="100%" stop-color="#15A9BC" stop-opacity="0"/>
+            </linearGradient>
+          </defs>
+          <g stroke="rgba(255,255,255,0.12)" stroke-width="1">
+            <line x1="0" y1="30" x2="320" y2="30"/>
+            <line x1="0" y1="60" x2="320" y2="60"/>
+            <line x1="0" y1="90" x2="320" y2="90"/>
+          </g>
+          <path d="M0 78 L40 70 L80 82 L120 58 L160 66 L200 44 L240 54 L280 36 L320 48 L320 120 L0 120 Z" fill="url(#g1)"/>
+          <path d="M0 78 L40 70 L80 82 L120 58 L160 66 L200 44 L240 54 L280 36 L320 48" fill="none" stroke="#6FE0EE" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <div class="monitor__chips">
+        <div class="chip"><div class="chip__label">载荷</div><div class="chip__value">42.6<small>kN</small></div></div>
+        <div class="chip"><div class="chip__label">电流</div><div class="chip__value">28.4<small>A</small></div></div>
+        <div class="chip"><div class="chip__label">温度</div><div class="chip__value">63.5<small>℃</small></div></div>
+      </div>
     </div>
-    <!-- Carousel End -->
+  </div>
+</section>
 
+<!-- ============ 数据条 ============ -->
+<section class="stats">
+  <div class="container stats__grid">
+    <div class="stat"><div class="stat__num">18<span>+</span></div><div class="stat__label">年行业深耕</div></div>
+    <div class="stat"><div class="stat__num">300<span>+</span></div><div class="stat__label">在运监测点</div></div>
+    <div class="stat"><div class="stat__num">9<span>大类</span></div><div class="stat__label">核心产品系列</div></div>
+    <div class="stat"><div class="stat__num">24<span>h</span></div><div class="stat__label">远程值守</div></div>
+  </div>
+</section>
 
-    <!-- 公司简介 Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-6">
-                    <div class="row gx-3 h-100">
-                        <div class="col-6 align-self-start wow fadeInUp" data-wow-delay="0.1s">
-                            <img class="img-fluid" src="img/about-1.jpg">
-                        </div>
-                        <div class="col-6 align-self-end wow fadeInDown" data-wow-delay="0.1s">
-                            <img class="img-fluid" src="img/about-2.jpg">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                    <p class="fw-medium text-uppercase text-primary mb-2">公司简介 </p>
-                    <h1 class="display-5 mb-4">深耕工业市场，引领行业发展</h1>
-                    <p class="mb-4">专注于油田测控系统的研发与集成，核心团队拥有多年行业经验，涵盖自动化、电子、计算机等多学科背景。
-					公司自主研发的OMTOP系列系统，融合先进传感与通讯技术，实现油井的远程监控、闭环控制与智能调参，显著提升采油效率，降低运维成本。
-                    </p>
-                    <div class="d-flex align-items-center mb-4">
-                        <div class="flex-shrink-0 bg-primary p-4">
-                            <h1 class="display-2">25</h1>
-                            <h5 class="text-white">年深耕，</h5>
-                            <h5 class="text-white">成就专业品质</h5>
-                        </div>
-                        <div class="ms-4">
-                            <p><i class="fa fa-check text-primary me-2"></i>能源行业</p>
-                            <p><i class="fa fa-check text-primary me-2"></i>环保与水利行业</p>
-                            <p><i class="fa fa-check text-primary me-2"></i>市政基础设施</p>
-                            <p><i class="fa fa-check text-primary me-2"></i>通信与信息化行业</p>
-                            <p class="mb-0"><i class="fa fa-check text-primary me-2"></i>工业自动化与系统集成服务</p>
-                        </div>
-                    </div>
-                    <div class="row pt-2">
-                        <div class="col-sm-6">
-                            <div class="d-flex align-items-center">
-                                <div class="flex-shrink-0 btn-lg-square rounded-circle bg-primary">
-                                    <i class="fa fa-envelope-open text-white"></i>
-                                </div>
-                                <div class="ms-3">
-                                    <p class="mb-2">发送邮件</p>
-                                    <h5 class="mb-0">info@example.com</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="d-flex align-items-center">
-                                <div class="flex-shrink-0 btn-lg-square rounded-circle bg-primary">
-                                    <i class="fa fa-phone-alt text-white"></i>
-                                </div>
-                                <div class="ms-3">
-                                    <p class="mb-2">致电我们</p>
-                                    <h5 class="mb-0">+012 345 6789</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+<!-- ============ 产品中心 ============ -->
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">产品中心</span>
+      <h2 class="section-title">覆盖采油全链路的监测与测控产品</h2>
+      <p class="section-sub">从井筒到计量站，从传感器到集中管理平台，软硬一体、即插即用。</p>
     </div>
-    <!-- 公司简介 End -->
 
-
-    <!-- Facts Start -->
-    <div class="container-fluid facts my-5 p-5">
-        <div class="row g-5">
-            <div class="col-md-6 col-xl-3 wow fadeIn" data-wow-delay="0.1s">
-                <div class="text-center border p-5">
-                    <i class="fa fa-certificate fa-3x text-white mb-3"></i>
-                    <h1 class="display-2 text-primary mb-0" data-toggle="counter-up">25</h1>
-                    <span class="fs-5 fw-semi-bold text-white">年经验</span>
-                </div>
-            </div>
-            <div class="col-md-6 col-xl-3 wow fadeIn" data-wow-delay="0.3s">
-                <div class="text-center border p-5">
-                    <i class="fa fa-users-cog fa-3x text-white mb-3"></i>
-                    <h1 class="display-2 text-primary mb-0" data-toggle="counter-up">135</h1>
-                    <span class="fs-5 fw-semi-bold text-white">典型案例</span>
-                </div>
-            </div>
-            <div class="col-md-6 col-xl-3 wow fadeIn" data-wow-delay="0.5s">
-                <div class="text-center border p-5">
-                    <i class="fa fa-users fa-3x text-white mb-3"></i>
-                    <h1 class="display-2 text-primary mb-0" data-toggle="counter-up">957</h1>
-                    <span class="fs-5 fw-semi-bold text-white">满意客户</span>
-                </div>
-            </div>
-            <div class="col-md-6 col-xl-3 wow fadeIn" data-wow-delay="0.7s">
-                <div class="text-center border p-5">
-                    <i class="fa fa-check-double fa-3x text-white mb-3"></i>
-                    <h1 class="display-2 text-primary mb-0" data-toggle="counter-up">1839</h1>
-                    <span class="fs-5 fw-semi-bold text-white">产品</span>
-                </div>
-            </div>
+    <div class="bento">
+      <!-- A 宽卡 -->
+      <article class="card card--wide">
+        <span class="card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/></svg>
+        </span>
+        <h3 class="card__title">油井远程监测与功图量油系统</h3>
+        <p class="card__desc">基于无线功图测试终端，实时采集载荷、位移与电流，自动绘制示功图并核算产液量，实现抽油机井远程诊断与量油。</p>
+        <div class="card__tags">
+          <span class="tag">示功图</span><span class="tag">远程量油</span><span class="tag">抽油机井</span>
         </div>
+      </article>
+
+      <!-- B -->
+      <article class="card">
+        <span class="card__icon card__icon--cyan">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c4 4 6 7 6 11a6 6 0 1 1-12 0c0-4 2-7 6-11Z"/></svg>
+        </span>
+        <h3 class="card__title">气井排水自动采液器</h3>
+        <p class="card__desc">针对排水采气工况，自动判断积液并启停，保障气井连续稳定生产。</p>
+        <div class="card__tags">
+          <span class="tag">排水采气</span><span class="tag">自动启停</span>
+        </div>
+      </article>
+
+      <!-- C -->
+      <article class="card">
+        <span class="card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 9h6v6H9zM4 10h-2M4 14h-2M22 10h-2M22 14h-2M10 4V2M14 4V2M10 22v-2M14 22v-2"/></svg>
+        </span>
+        <h3 class="card__title">无线测控终端与 RTU</h3>
+        <p class="card__desc">支持 GSM/GPRS 与多协议接入的远程测控终端，适配各类井场与站点的数据采集与远程控制。</p>
+        <div class="card__tags">
+          <span class="tag">RTU</span><span class="tag">GPRS</span><span class="tag">远程控制</span>
+        </div>
+      </article>
+
+      <!-- D 宽卡 -->
+      <article class="card card--wide">
+        <span class="card__icon card__icon--cyan">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l2 6 4-12 2 6h6"/></svg>
+        </span>
+        <h3 class="card__title">传感器与智能仪表</h3>
+        <p class="card__desc">覆盖电流、电压、温度、压力、液位、流量、含水、载荷、位移等关键参数的传感器与仪表，为监测平台提供可靠数据源。</p>
+        <div class="card__tags">
+          <span class="tag">压力/温度</span><span class="tag">流量/液位</span><span class="tag">载荷/位移</span><span class="tag">含水率</span>
+        </div>
+      </article>
+
+      <!-- E 宽卡 -->
+      <article class="card card--wide">
+        <span class="card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8Z"/></svg>
+        </span>
+        <h3 class="card__title">节能与配电监控</h3>
+        <p class="card__desc">对电机、配电回路的电压电流与能耗进行实时监测，结合工况优化运行策略，助力井场节能降耗。</p>
+        <div class="card__tags">
+          <span class="tag">能耗监测</span><span class="tag">配电管理</span><span class="tag">节能优化</span>
+        </div>
+      </article>
+
+      <!-- F -->
+      <article class="card">
+        <span class="card__icon card__icon--cyan">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></svg>
+        </span>
+        <h3 class="card__title">多行业应用</h3>
+        <p class="card__desc">方案同样适用于水务、供热、市政监控等场景的远程测控与集中管理。</p>
+        <div class="card__tags">
+          <span class="tag">水务</span><span class="tag">供热</span><span class="tag">市政</span>
+        </div>
+      </article>
     </div>
-    <!-- Facts End -->
 
-
-    <!-- 企业文化s Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="row g-5 align-items-center">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="position-relative me-lg-4">
-                        <img class="img-fluid w-100" src="img/feature.jpg" alt="">
-                        <span
-                            class="position-absolute top-50 start-100 translate-middle bg-white rounded-circle d-none d-lg-block"
-                            style="width: 120px; height: 120px;"></span>
-                        <button type="button" class="btn-play" data-bs-toggle="modal"
-                            data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
-                            <span></span>
-                        </button>
-                    </div>
-                </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <p class="fw-medium text-uppercase text-primary mb-2">为什么选择我们</p>
-                    <h1 class="display-5 mb-4">我们的优势</h1>
-                    <p class="mb-4">我们专注于工业自动化与油田测控系统领域二十余年，凭借丰富的行业经验、领先的技术实力与全面的服务体系，赢得了众多客户的信赖与长期合作。
-                    </p>
-                    <div class="row gy-4">
-                        <div class="col-12">
-                            <div class="d-flex">
-                                <div class="flex-shrink-0 btn-lg-square rounded-circle bg-primary">
-                                    <i class="fa fa-check text-white"></i>
-                                </div>
-                                <div class="ms-4">
-                                    <h4>深厚的行业积累</h4>
-                                    <span>拥有25年油田自动化系统研发与集成经验，团队成员具备石油工程、自动化、计算机等多学科背景，实战能力强，落地效果好。</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="d-flex">
-                                <div class="flex-shrink-0 btn-lg-square rounded-circle bg-primary">
-                                    <i class="fa fa-check text-white"></i>
-                                </div>
-                                <div class="ms-4">
-                                    <h4>领先的自主技术</h4>
-                                    <span>自主研发OMTOP系列油田监控系统，融合传感器、通讯、网络与闭环控制技术，提升油井智能化与自动化水平，助力客户降本增效。</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="d-flex">
-                                <div class="flex-shrink-0 btn-lg-square rounded-circle bg-primary">
-                                    <i class="fa fa-check text-white"></i>
-                                </div>
-                                <div class="ms-4">
-                                    <h4>一站式解决方案</h4>
-                                    <span>提供从项目设计、系统集成到售后运维的全流程服务，支持定制化开发，覆盖石油、电力、水利、市政、环保等多个行业。</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="more-row">
+      <a href="products.html" class="btn btn--outline">浏览全部产品 →</a>
     </div>
-    <!-- 企业文化End -->
+  </div>
+</section>
 
-
-    <!-- Video Modal Start -->
-    <div class="modal modal-video fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content rounded-0">
-                <div class="modal-header">
-                    <h3 class="modal-title" id="exampleModalLabel">Youtube Video</h3>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <!-- 16:9 aspect ratio -->
-                    <div class="ratio ratio-16x9">
-                        <iframe class="embed-responsive-item" src="" id="video" allowfullscreen
-                            allowscriptaccess="always" allow="autoplay"></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
+<!-- ============ 解决方案 ============ -->
+<section class="section section--alt">
+  <div class="container solution__grid">
+    <div class="solution__copy">
+      <span class="eyebrow">解决方案</span>
+      <h2 class="section-title">OMTOP 新一代油田设备无线监控系统</h2>
+      <p class="section-sub">
+        OMTOP 是玛斯莱特面向油田设备打造的无线监控集中管理系统，将分散的井场与站点接入统一平台，
+        实现"看得见、管得了、预警早"。
+      </p>
+      <ul class="solution__list">
+        <li>
+          <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+          覆盖抽油机井、电泵井、螺杆泵井、注水井、水源井及计量站、配水间、注聚站、转油站、联合站、锅炉房
+        </li>
+        <li>
+          <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+          实时采集电流、电压、温度、压力、液位、流量、含水、载荷、位移等九类参数
+        </li>
+        <li>
+          <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+          异常自动预警、远程诊断与集中报表，减少现场巡井与停机损失
+        </li>
+      </ul>
     </div>
-    <!-- Video Modal End -->
 
-
-    <!-- 解决方案 Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="text-center mx-auto pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <p class="fw-medium text-uppercase text-primary mb-2">解决方案</p>
-                <h1 class="display-5 mb-4">我们专注于提供高效可靠的工业解决方案</h1>
-            </div>
-            <div class="row gy-5 gx-4">
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item">
-                        <img class="img-fluid" src="img/service-1.jpg" alt="">
-                        <div class="service-img">
-                            <img class="img-fluid" src="img/service-1.jpg" alt="">
-                        </div>
-                        <div class="service-detail">
-                            <div class="service-title">
-                                <hr class="w-25">
-                                <h3 class="mb-0">通信与信息化行业</h3>
-                                <hr class="w-25">
-                            </div>
-                            <div class="service-text">
-                                <p class="text-white mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos
-                                    lorem sed diam stet diam sed stet.</p>
-                            </div>
-                        </div>
-                        <a class="btn btn-light" href="">了解更多</a>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item">
-                        <img class="img-fluid" src="img/service-2.jpg" alt="">
-                        <div class="service-img">
-                            <img class="img-fluid" src="img/service-2.jpg" alt="">
-                        </div>
-                        <div class="service-detail">
-                            <div class="service-title">
-                                <hr class="w-25">
-                                <h3 class="mb-0">工业自动化与系统集成服务</h3>
-                                <hr class="w-25">
-                            </div>
-                            <div class="service-text">
-                                <p class="text-white mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos
-                                    lorem sed diam stet diam sed stet.</p>
-                            </div>
-                        </div>
-                        <a class="btn btn-light" href="">了解更多</a>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="service-item">
-                        <img class="img-fluid" src="img/service-3.jpg" alt="">
-                        <div class="service-img">
-                            <img class="img-fluid" src="img/service-3.jpg" alt="">
-                        </div>
-                        <div class="service-detail">
-                            <div class="service-title">
-                                <hr class="w-25">
-                                <h3 class="mb-0">能源行业</h3>
-                                <hr class="w-25">
-                            </div>
-                            <div class="service-text">
-                                <p class="text-white mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos
-                                    lorem sed diam stet diam sed stet.</p>
-                            </div>
-                        </div>
-                        <a class="btn btn-light" href="">了解更多</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="solution__diagram" aria-label="系统架构示意">
+      <svg viewBox="0 0 360 280" width="100%" role="img" aria-label="OMTOP 系统架构">
+        <defs>
+          <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#0A4D9C"/><stop offset="100%" stop-color="#15A9BC"/>
+          </linearGradient>
+        </defs>
+        <!-- 中心平台 -->
+        <rect x="128" y="112" width="104" height="56" rx="12" fill="url(#g2)"/>
+        <text x="180" y="135" text-anchor="middle" fill="#fff" font-size="13" font-weight="700" font-family="Noto Sans SC">OMTOP 平台</text>
+        <text x="180" y="153" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-size="10" font-family="Noto Sans SC">集中管理</text>
+        <!-- 连接线 -->
+        <g stroke="#15A9BC" stroke-width="1.6" opacity="0.7">
+          <line x1="180" y1="112" x2="64" y2="52"/>
+          <line x1="180" y1="112" x2="180" y2="48"/>
+          <line x1="180" y1="112" x2="296" y2="52"/>
+          <line x1="180" y1="168" x2="64" y2="228"/>
+          <line x1="180" y1="168" x2="180" y2="232"/>
+          <line x1="180" y1="168" x2="296" y2="228"/>
+        </g>
+        <!-- 终端节点 -->
+        <g font-family="Noto Sans SC" font-size="11" fill="#0F1B2D" text-anchor="middle">
+          <circle cx="64" cy="52" r="26" fill="#E3EDF8"/><text x="64" y="56">井场</text>
+          <circle cx="180" cy="48" r="26" fill="#E3EDF8"/><text x="180" y="52">RTU</text>
+          <circle cx="296" cy="52" r="26" fill="#E3EDF8"/><text x="296" y="56">计量站</text>
+          <circle cx="64" cy="228" r="26" fill="#DCF2F5"/><text x="64" y="232">注水</text>
+          <circle cx="180" cy="232" r="26" fill="#DCF2F5"/><text x="180" y="236">配水</text>
+          <circle cx="296" cy="228" r="26" fill="#DCF2F5"/><text x="296" y="232">锅炉</text>
+        </g>
+      </svg>
     </div>
-    <!-- 解决方案 End -->
+  </div>
+</section>
 
-
-    <!-- 产品中心 Start -->
-    <div class="container-fluid bg-dark pt-5 my-5 px-0">
-        <div class="text-center mx-auto mt-5 wow fadeIn" data-wow-delay="0.1s" style="max-width: 600px;">
-            <p class="fw-medium text-uppercase text-primary mb-2">产品中心</p>
-            <h1 class="display-5 text-white mb-5">近期案例展示</h1>
-        </div>
-        <div class="owl-carousel project-carousel wow fadeIn" data-wow-delay="0.1s">
-            <a class="project-item" href="">
-                <img class="img-fluid" src="img/project-1.jpg" alt="">
-                <div class="project-title">
-                    <h5 class="text-primary mb-0">Auto Engineering</h5>
-                </div>
-            </a>
-            <a class="project-item" href="">
-                <img class="img-fluid" src="img/project-2.jpg" alt="">
-                <div class="project-title">
-                    <h5 class="text-primary mb-0">Civil Engineering</h5>
-                </div>
-            </a>
-            <a class="project-item" href="">
-                <img class="img-fluid" src="img/project-3.jpg" alt="">
-                <div class="project-title">
-                    <h5 class="text-primary mb-0">Gas Engineering</h5>
-                </div>
-            </a>
-            <a class="project-item" href="">
-                <img class="img-fluid" src="img/project-4.jpg" alt="">
-                <div class="project-title">
-                    <h5 class="text-primary mb-0">Power Engineering</h5>
-                </div>
-            </a>
-            <a class="project-item" href="">
-                <img class="img-fluid" src="img/project-5.jpg" alt="">
-                <div class="project-title">
-                    <h5 class="text-primary mb-0">Energy Engineering</h5>
-                </div>
-            </a>
-            <a class="project-item" href="">
-                <img class="img-fluid" src="img/project-6.jpg" alt="">
-                <div class="project-title">
-                    <h5 class="text-primary mb-0">Water Engineering</h5>
-                </div>
-            </a>
-        </div>
+<!-- ============ 优势 ============ -->
+<section class="section">
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow">为什么选择我们</span>
+      <h2 class="section-title">把油田监控这件事做到专业</h2>
     </div>
-    <!-- 产品中心 End -->
-
-
-    <!-- 典型案例 Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <p class="fw-medium text-uppercase text-primary mb-2">典型案例</p>
-                <h1 class="display-5 mb-5">典型案例</h1>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="team-item">
-                        <img class="img-fluid" src="img/team-1.jpg" alt="">
-                        <div class="d-flex">
-                            <div class="flex-shrink-0 btn-square bg-primary" style="width: 90px; height: 90px;">
-                                <i class="fa fa-2x fa-share text-white"></i>
-                            </div>
-                            <div class="position-relative overflow-hidden bg-light d-flex flex-column justify-content-center w-100 ps-4"
-                                style="height: 90px;">
-                                <h5>Rob Miller</h5>
-                                <span class="text-primary">CEO & Founder</span>
-                                <div class="team-social">
-                                    <a class="btn btn-square btn-dark rounded-circle mx-1" href=""><i
-                                            class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-square btn-dark rounded-circle mx-1" href=""><i
-                                            class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-square btn-dark rounded-circle mx-1" href=""><i
-                                            class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="team-item">
-                        <img class="img-fluid" src="img/team-2.jpg" alt="">
-                        <div class="d-flex">
-                            <div class="flex-shrink-0 btn-square bg-primary" style="width: 90px; height: 90px;">
-                                <i class="fa fa-2x fa-share text-white"></i>
-                            </div>
-                            <div class="position-relative overflow-hidden bg-light d-flex flex-column justify-content-center w-100 ps-4"
-                                style="height: 90px;">
-                                <h5>Adam Crew</h5>
-                                <span class="text-primary">产品中心</span>
-                                <div class="team-social">
-                                    <a class="btn btn-square btn-dark rounded-circle mx-1" href=""><i
-                                            class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-square btn-dark rounded-circle mx-1" href=""><i
-                                            class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-square btn-dark rounded-circle mx-1" href=""><i
-                                            class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="team-item">
-                        <img class="img-fluid" src="img/team-3.jpg" alt="">
-                        <div class="d-flex">
-                            <div class="flex-shrink-0 btn-square bg-primary" style="width: 90px; height: 90px;">
-                                <i class="fa fa-2x fa-share text-white"></i>
-                            </div>
-                            <div class="position-relative overflow-hidden bg-light d-flex flex-column justify-content-center w-100 ps-4"
-                                style="height: 90px;">
-                                <h5>Peter Farel</h5>
-                                <span class="text-primary">Engineer</span>
-                                <div class="team-social">
-                                    <a class="btn btn-square btn-dark rounded-circle mx-1" href=""><i
-                                            class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-square btn-dark rounded-circle mx-1" href=""><i
-                                            class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-square btn-dark rounded-circle mx-1" href=""><i
-                                            class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="adv-grid">
+      <div class="adv">
+        <span class="adv__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 7v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V7l-8-5Z"/><path d="M9 12l2 2 4-4"/></svg></span>
+        <h3 class="adv__title">技术领先</h3>
+        <p class="adv__desc">长期从事油田自动化与远程测控，核心算法与硬件自主可控。</p>
+      </div>
+      <div class="adv">
+        <span class="adv__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/></svg></span>
+        <h3 class="adv__title">专业团队</h3>
+        <p class="adv__desc">研发与工程团队深耕油气行业，懂工艺也懂现场。</p>
+      </div>
+      <div class="adv">
+        <span class="adv__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></span>
+        <h3 class="adv__title">全栈自研</h3>
+        <p class="adv__desc">从传感器、终端到平台软件一体自研，交付与运维更顺畅。</p>
+      </div>
+      <div class="adv">
+        <span class="adv__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V10l7-5 7 5v11M10 21v-6h4v6"/></svg></span>
+        <h3 class="adv__title">现场经验丰富</h3>
+        <p class="adv__desc">300+ 在运监测点遍布多类工况，方案经真实井场长期验证。</p>
+      </div>
     </div>
-    <!-- 典型案例 End -->
+  </div>
+</section>
 
-
-    <!-- Testimonial Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <p class="fw-medium text-uppercase text-primary mb-2">客户反馈</p>
-                <h1 class="display-5 mb-5">来自客户的认可</h1>
-            </div>
-            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
-                <div class="testimonial-item text-center">
-                    <div class="testimonial-img position-relative">
-                        <img class="img-fluid rounded-circle mx-auto mb-5" src="img/testimonial-1.jpg">
-                        <div class="btn-square bg-primary rounded-circle">
-                            <i class="fa fa-quote-left text-white"></i>
-                        </div>
-                    </div>
-                    <div class="testimonial-text text-center rounded p-4">
-                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna
-                            ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea
-                            clita.</p>
-                        <h5 class="mb-1">Client Name</h5>
-                        <span class="fst-italic">Profession</span>
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <div class="testimonial-img position-relative">
-                        <img class="img-fluid rounded-circle mx-auto mb-5" src="img/testimonial-2.jpg">
-                        <div class="btn-square bg-primary rounded-circle">
-                            <i class="fa fa-quote-left text-white"></i>
-                        </div>
-                    </div>
-                    <div class="testimonial-text text-center rounded p-4">
-                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna
-                            ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea
-                            clita.</p>
-                        <h5 class="mb-1">Client Name</h5>
-                        <span class="fst-italic">Profession</span>
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <div class="testimonial-img position-relative">
-                        <img class="img-fluid rounded-circle mx-auto mb-5" src="img/testimonial-3.jpg">
-                        <div class="btn-square bg-primary rounded-circle">
-                            <i class="fa fa-quote-left text-white"></i>
-                        </div>
-                    </div>
-                    <div class="testimonial-text text-center rounded p-4">
-                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna
-                            ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea
-                            clita.</p>
-                        <h5 class="mb-1">Client Name</h5>
-                        <span class="fst-italic">Profession</span>
-                    </div>
-                </div>
-            </div>
-        </div>
+<!-- ============ 典型案例 ============ -->
+<section class="section section--alt">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">典型案例</span>
+      <h2 class="section-title">已在多种工况稳定运行的监测系统</h2>
     </div>
-    <!-- Testimonial End -->
-
-
-    <!-- Footer Start -->
-    <div id="footer"></div>
-    <!-- Footer End -->
-
-
-    <!-- Copyright Start -->
-    <div class="container-fluid copyright bg-dark py-4">
-        <div class="container text-center">
-            <p class="mb-2">Copyright &copy; <a class="fw-semi-bold" href="#">某某智能装备有限公司</a>, All Right Reserved.
-            </p>
-            <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-            <p class="mb-0">Designed By <a class="fw-semi-bold" href="https://htmlcodex.com">HTML Codex</a> Distributed
-                By: <a href="https://themewagon.com">ThemeWagon</a> </p>
+    <div class="case-grid">
+      <article class="case">
+        <div class="case__media">
+          <span class="case__tag">油田</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V8l7-4 7 4v13M9 21v-5h6v5"/></svg>
         </div>
+        <div class="case__body">
+          <h3 class="case__title">抽油机井远程监测</h3>
+          <p class="case__desc">为整装油田部署功图量油与远程诊断，减少巡井频次，提升异常响应速度。</p>
+          <div class="case__meta"><span>监测点 <b>120+</b></span><span>类型 <b>抽油机井</b></span></div>
+        </div>
+      </article>
+
+      <article class="case">
+        <div class="case__media">
+          <span class="case__tag">气田</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c4 4 6 7 6 11a6 6 0 1 1-12 0c0-4 2-7 6-11Z"/></svg>
+        </div>
+        <div class="case__body">
+          <h3 class="case__title">气井排水自动采液</h3>
+          <p class="case__desc">针对排水采气井实现自动启停判断，保障气井连续生产并降低人工干预。</p>
+          <div class="case__meta"><span>监测点 <b>60+</b></span><span>类型 <b>气井</b></span></div>
+        </div>
+      </article>
+
+      <article class="case">
+        <div class="case__media">
+          <span class="case__tag">水务</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h18M3 12a9 9 0 0 1 18 0M3 12a9 9 0 0 0 18 0"/></svg>
+        </div>
+        <div class="case__body">
+          <h3 class="case__title">水源井与供水监控</h3>
+          <p class="case__desc">将水源井、加压站纳入远程测控，统一水位、流量与能耗管理。</p>
+          <div class="case__meta"><span>监测点 <b>40+</b></span><span>类型 <b>水源井</b></span></div>
+        </div>
+      </article>
     </div>
-    <!-- Copyright End -->
+  </div>
+</section>
 
+<!-- ============ CTA ============ -->
+<section class="section section--tight">
+  <div class="container">
+    <div class="cta">
+      <div class="cta__inner">
+        <h2>让我们一起把油田监控做得更聪明</h2>
+        <p>告诉我们您的井场与工况，我们提供从评估、设计到部署的一体化方案。</p>
+        <div class="cta__actions">
+          <a href="contact.html" class="btn btn--cyan">获取专属方案</a>
+          <a href="products.html" class="btn btn--ghost">浏览产品中心</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
-            class="bi bi-arrow-up"></i></a>
+<!-- ============ 页脚 ============ -->
+<footer class="footer">
+  <div class="container footer__grid">
+    <div>
+      <a class="brand" href="index.html">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h3l2-6 4 14 3-9 2 4h4"/></svg>
+        </span>
+        <span class="brand__name">玛斯莱特科技<small>MASLETECH</small></span>
+      </a>
+      <p class="footer__about">北京玛斯莱特科技有限公司专注油田自动化、SCADA 与远程测控系统集成，提供软硬全栈的监测与量油产品。</p>
+    </div>
+    <div class="footer__col">
+      <h4>产品</h4>
+      <a href="products.html">油井远程监测</a>
+      <a href="products.html">无线测控终端</a>
+      <a href="products.html">传感器与仪表</a>
+      <a href="products.html">气井排水采液</a>
+    </div>
+    <div class="footer__col">
+      <h4>方案</h4>
+      <a href="solution.html">OMTOP 监控系统</a>
+      <a href="cases.html">典型案例</a>
+      <a href="about.html">公司简介</a>
+    </div>
+    <div class="footer__col">
+      <h4>联系</h4>
+      <a href="contact.html">商务合作</a>
+      <a href="contact.html">技术支持</a>
+      <a href="contact.html">北京 · 中国</a>
+    </div>
+  </div>
+  <div class="container footer__bottom">
+    <span>2026 北京玛斯莱特科技有限公司 版权所有</span>
+    <span>SCADA · 油田自动化 · 远程测控</span>
+  </div>
+</footer>
 
-
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-	<script src="js/include.js" defer></script>
+<script src="assets/js/main.js"></script>
 </body>
-
 </html>
